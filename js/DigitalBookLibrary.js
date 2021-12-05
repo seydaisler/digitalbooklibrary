@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
      }
     }, step);
   }
-  counter("count1", 0, 934, 6000);
+  counter("count1", 0, 1934, 6000);
  });
  
