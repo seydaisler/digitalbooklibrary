@@ -16,7 +16,6 @@ function carousel() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  alert("Welcome")
   function counter(id, start, end, duration) {
    let obj = document.getElementById(id),
     current = start,
@@ -31,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
      }
     }, step);
   }
-  counter("count1", 0, 1934, 6000);
+  counter("count1", 0, 1934, 12000);
  });
+
+
  
