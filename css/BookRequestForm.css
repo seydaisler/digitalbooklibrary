@@ -65,16 +65,7 @@ main{
 .leftside-header div{
      margin-left: 5px;
      padding: 10px;
-}
 
-.leftside-header-right{
-    border: 1px solid red;
-    border-radius: 0 0 0 12px;
-    transition: color 1s;
-}
-
-.leftside-header div:hover{
-    color:red;
  }
 
 a {
@@ -93,7 +84,6 @@ a {
     color: gray;
     padding: 50px 0;
     margin: 10px;
-    height: %80;
   }
   
   .container {
