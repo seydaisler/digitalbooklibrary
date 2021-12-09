@@ -40,8 +40,7 @@ main{
     margin: 5px;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 2px solid #fff;
-    transition: border-color 2s, color 1s;
+    
 }
 
 .main-header p{
@@ -93,6 +92,7 @@ a {
  animation-iteration-count: infinite;
  animation-direction: alternate;
 }
+
 @keyframes slidein {
     from {
       margin-left: 100%;
@@ -105,25 +105,44 @@ a {
     }
   }
  
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    "top" 
-    "explain"                 
-    "left"
-    "right";
-  
-}
 
-@media screen and (min-width: 720px) { 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-    "top top explain"               
-    "left . right" 
-    "left . right";
-    grid-gap: 25px;
+    @media screen and (max-width: 350px) { 
+        .nav, .mySlides{
+            width: 100px;
+            height: auto;
+            margin: 2px;
+            padding: 2px;
+        }
+    }
+
+    @media screen and (min-width: 351px) and (max-width: 650px)  { 
+        .nav, .mySlides{
+            width: 150px;
+            height: auto;
+        }
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        "top" 
+        "explain"                 
+        "left"
+        "right";
+      
+    }
+    
+    @media screen and (min-width: 720px) { 
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "top top explain"               
+        "left . right" 
+        "left . right";
+        grid-gap: 25px;
+    }
 }
             
 top {
@@ -148,10 +167,11 @@ explain {
 }
 
  
-right{ grid-area: right;
-   justify-content: space-around;  
-   padding: 10px;
-   margin: 10px;
+right{ 
+    grid-area: right;
+    justify-content: space-around;  
+    padding: 10px;
+    margin: 10px;
 }
  
 left {
@@ -232,6 +252,7 @@ input {
 
     }
   }
+
 .item-footer-left div p{
     margin: 7px;
 }
@@ -262,18 +283,15 @@ input {
     animation: rotate 2s forwards;
 }
 
-@keyframes rotate {
-    0%   { transform: scale(1);}
-    50%  { transform: scale(1.2);} 
-    100% { transform: scale(1);}     
-}
+
 
 @media screen and (max-width: 650px) {
     main, .main-header, .item-footer-left{
         flex-direction: column;
-        /* justify-content: center; */
+
 
     }
     section{
         order: -1;
     }
+}

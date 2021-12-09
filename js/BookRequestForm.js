@@ -24,6 +24,7 @@ function buttonclick() {event.preventDefault()
         alert("Please enter a valid email")
         return false
     }
+    alert("You have submitted the book named " + document.getElementById("book").value)
     bookrequstform.submit()
 }
 

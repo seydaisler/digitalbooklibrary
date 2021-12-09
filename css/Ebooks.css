@@ -40,8 +40,22 @@ main{
     margin: 5px;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 2px solid #fff;
-    transition: border-color 2s, color 1s;
+ }
+
+ @media screen and (max-width: 350px) { 
+   .nav {
+       width: 100px;
+       height: auto;
+       margin: 2px;
+       padding: 2px;
+   }
+ }
+ 
+ @media screen and (min-width: 351px) and (max-width: 650px)  { 
+   .nav {
+       width: 150px;
+       height: auto;
+   }
  }
 
  .main-header p{
@@ -228,7 +242,7 @@ input {
 @media screen and (max-width: 650px) {
    main, .main-header, .item-footer-left{
        flex-direction: column;
-       /* justify-content: center; */
+       
 
    }
    section{
