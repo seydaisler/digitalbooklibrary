@@ -88,6 +88,7 @@ a {
 
  .grid-container {
     display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 1fr, 250px) );
     grid-template-areas:
     "top"                  
     "left"
@@ -115,14 +116,14 @@ a {
 
 
  
-right{ grid-area: right;
+left{ grid-area: left;
    justify-content: space-around;  
    padding: 10px;
    margin: 10px;
 }
  
-left {
-    grid-area: left;
+right {
+    grid-area: right;
     background-color: lightblue; 
     text-align: left;
     color: white ;
